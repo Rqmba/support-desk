@@ -13,7 +13,7 @@ function Home() {
         <FaQuestionCircle /> Crée une nouvelle demande d'assistance
       </Link>
 
-      <Link to="/new-ticket" className="btn btn-block">
+      <Link to="/tickets" className="btn btn-block">
         <FaTicketAlt /> Voir mes demandes
       </Link>
     </>

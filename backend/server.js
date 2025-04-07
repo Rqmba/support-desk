@@ -1,3 +1,4 @@
+const cors = require("cors");
 const path = require("path");
 const express = require("express");
 const colors = require("colors");
@@ -10,6 +11,12 @@ const PORT = process.env.PORT || 5000;
 connectDB();
 
 const app = express();
+
+app.use(
+  cors({
+    origin: "https://support-desk-frontend-s1nc.onrender.com",
+  })
+);
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
